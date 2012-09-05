@@ -102,7 +102,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 		public bool GetValueBoolean ()
 		{
-			throw new NotImplementedException();
+            return Convert.ToBoolean(GetValueInt32());
 		}
 
 		public bool[] GetValueBooleanArray ()
@@ -236,7 +236,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
 		public void SetValue (bool value)
 		{
-			throw new NotImplementedException();
+            SetValue(Convert.ToInt32(value));
 		}
 
 		public void SetValue (bool[] value)
