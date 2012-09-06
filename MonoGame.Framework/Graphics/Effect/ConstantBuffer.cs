@@ -141,7 +141,12 @@ namespace Microsoft.Xna.Framework.Graphics
                         case EffectParameterType.Single:
                             SetData(offset, param.RowCount, param.ColumnCount, param.Data);
                             break;
-
+                        case EffectParameterType.Int32:
+                            SetData(offset, param.RowCount, param.ColumnCount, param.Data);
+                            break;
+                        case EffectParameterType.Bool:
+                            SetData(offset, param.RowCount, param.ColumnCount, param.Data);
+                            break;
                         default:
                             throw new NotImplementedException("Not supported!");
                     }
