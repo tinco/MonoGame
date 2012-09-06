@@ -95,6 +95,8 @@ namespace Microsoft.Xna.Framework.Graphics
 
                 if (data is float)
                     bytes = BitConverter.GetBytes((float)data);
+                else if (data is int)
+                    bytes = BitConverter.GetBytes((int)data);
                 else
                     bytes = BitConverter.GetBytes(((float[])data)[0]);
 
